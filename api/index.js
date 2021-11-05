@@ -27,8 +27,23 @@ app.get('/city', async (req, res) => {
     //console.log(row)
     res.json(rows)
   })
-  
+})
 
+app.get('/accepted', async (req, res) => {
+  db.all('SELECT * FROM pocet_prijatych', (err, rows) => {
+    if (err) console.log('fail')
+    //console.log(row)
+    res.json(rows)
+  })
+})
+  
+app.get('/field', async (req, res) => {
+  db.all('SELECT * FROM obor', (err, rows) => {
+    if (err) console.log('fail')
+    //console.log(row)
+    res.json(rows)
+  })
+  
 })
 
 

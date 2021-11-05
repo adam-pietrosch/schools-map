@@ -14,6 +14,8 @@
     "express": "^4.17.1",
     "nuxt": "^2.15.7",
     "sqlite3": "^5.0.2",
+    "vue3-openlayers": "^0.1.48",
+    "vuelayers": "^0.11.37",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
