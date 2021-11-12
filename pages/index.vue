@@ -7,7 +7,7 @@
         <vl-view :zoom.sync="zoom" :center.sync="center" :rotation.sync="rotation"></vl-view>
 
         <vl-feature v-for="school in schools" :key="school.id">
-          <vl-geom-point :coordinates="[school['geo-lat'],school['geo-long']]"></vl-geom-point>
+          <vl-geom-point :coordinates="[school['geo-long'],school['geo-lat']]"></vl-geom-point>
         </vl-feature>
 
         <vl-layer-tile id="osm">
