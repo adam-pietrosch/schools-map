@@ -72,6 +72,8 @@ export default {
     const schools = await this.$axios.$get('http://localhost:3000/api/school')
     this.schools = schools
 
+    console.log(schools)
+
     const cities = await this.$axios.$get('http://localhost:3000/api/city')
     this.cities = cities
 
